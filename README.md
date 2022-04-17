@@ -5,7 +5,7 @@
 
 ## Extract Common Code to Base Class
 
-There are a lot of duplicate code in `Cat`, `Dog` and `Sheep` classes, please refactor them to a base class. so that the local run of `mvn verify` can pass.
+There are a lot of duplicate code in `Cat`, `Dog` and `Sheep` classes, please refactor them, extract common code to a base `Animal` class and make sure the local run of `mvn verify` pass.
 
 Don't know how? See [verify locally in IDEA](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/run-mvn-verify-idea.md)/[verify locally in VSCode](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/run-mvn-verify-vscode.md).
 
@@ -27,7 +27,10 @@ If you need any help, feel free to join the [Discord Community](https://discord.
 **Note: we only allow you to modify the following files.
 Any changes to files other than the following files will be rejected:**
 
-- `src/main/java/com/bytelegend/`
+- `src/main/java/com/bytelegend/Cat.java`
+- `src/main/java/com/bytelegend/Dog.java`
+- `src/main/java/com/bytelegend/Sheep.java`
+- `src/main/java/com/bytelegend/Animal.java`
 
 </details>
 
@@ -36,7 +39,7 @@ Any changes to files other than the following files will be rejected:**
 
 ## 将公用代码抽取到父类中
 
-`Cat`/`Dog`/`Sheep`类中存在大量重复代码，请重构之，确保本地运行`mvn verify`能够通过。
+`Cat`/`Dog`/`Sheep`类中存在大量重复代码，请重构之，将重复代码提取到`Animal`类中，并确保本地运行`mvn verify`能够通过。
 
 不知道如何做？请查看[在IDEA中本地验证](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/zh_hans/run-mvn-verify-idea.md)/[在VSCode中本地验证](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/zh_hans/run-mvn-verify-vscode.md
 
@@ -56,7 +59,10 @@ Any changes to files other than the following files will be rejected:**
 
 **注意：我们只允许您修改以下文件，任何对其他文件的修改都会被拒绝：**
 
-- `src/main/java/com/bytelegend/`
+- `src/main/java/com/bytelegend/Cat.java`
+- `src/main/java/com/bytelegend/Dog.java`
+- `src/main/java/com/bytelegend/Sheep.java`
+- `src/main/java/com/bytelegend/Animal.java`
 
 </details>
 
@@ -66,7 +72,7 @@ Any changes to files other than the following files will be rejected:**
 將公共代碼提取到基類
 ----------
 
-`Cat` 、 `Dog`和`Sheep`類中有很多重複代碼，請將它們重構為基類。以便本地運行`mvn verify`可以通過。
+`Cat` 、 `Dog`和`Sheep`類中有很多重複代碼，請重構它們，將公共代碼提取到基礎`Animal`類中，並確保本地運行`mvn verify`通過。
 
 不知道怎麼樣？請參閱[在 IDEA](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/run-mvn-verify-idea.md) [中進行本地驗證/在 VSCode 中進行本地驗證](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/run-mvn-verify-vscode.md)。
 
@@ -86,7 +92,10 @@ Any changes to files other than the following files will be rejected:**
 
 **注意：我們只允許您修改以下文件。對以下文件以外的文件的任何更改都將被拒絕：**
 
--   `src/main/java/com/bytelegend/`
+-   `src/main/java/com/bytelegend/Cat.java`
+-   `src/main/java/com/bytelegend/Dog.java`
+-   `src/main/java/com/bytelegend/Sheep.java`
+-   `src/main/java/com/bytelegend/Animal.java`
 </details>
 
 <details>
@@ -95,7 +104,7 @@ Any changes to files other than the following files will be rejected:**
 Extraiga el código común a la clase base
 ----------------------------------------
 
-Hay mucho código duplicado en las clases `Cat` , `Dog` y `Sheep` , refactorícelos a una clase base. para que pueda pasar la ejecución local de `mvn verify` .
+Hay una gran cantidad de código duplicado en las clases `Cat` , `Dog` y `Sheep` , refactorícelos, extraiga el código común a una clase `Animal` base y asegúrese de que la ejecución local de `mvn verify` .
 
 ¿No sabes cómo? Ver [verificar localmente en IDEA](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/run-mvn-verify-idea.md) / [verificar localmente en VSCode](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/run-mvn-verify-vscode.md) .
 
@@ -115,7 +124,10 @@ Si necesita ayuda, no dude en unirse a la [comunidad de Discord](https://discord
 
 **Nota: solo le permitimos modificar los siguientes archivos. Cualquier cambio en los archivos que no sean los siguientes archivos será rechazado:**
 
--   `src/main/java/com/bytelegend/`
+-   `src/main/java/com/bytelegend/Cat.java`
+-   `src/main/java/com/bytelegend/Dog.java`
+-   `src/main/java/com/bytelegend/Sheep.java`
+-   `src/main/java/com/bytelegend/Animal.java`
 </details>
 
 <details>
@@ -124,7 +136,7 @@ Si necesita ayuda, no dude en unirse a la [comunidad de Discord](https://discord
 استخراج التعليمات البرمجية العامة للفئة الأساسية
 ------------------------------------------------
 
-هناك الكثير من الرموز المكررة في فصول `Cat` و `Dog` and `Sheep` ، يرجى إعادة بنائها إلى فئة أساسية. بحيث يمكن أن يمر التشغيل المحلي من `mvn verify` .
+هناك الكثير من الرموز المكررة في فئات `Cat` ، `Dog` and `Sheep` ، يرجى إعادة بنائها ، واستخراج الكود المشترك إلى فئة `Animal` الأساسية والتأكد من التشغيل المحلي `mvn verify` .
 
 لا أعرف كيف؟ انظر [التحقق محليًا في IDEA](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/run-mvn-verify-idea.md) / [تحقق محليًا في VSCode](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/run-mvn-verify-vscode.md) .
 
@@ -144,20 +156,23 @@ Si necesita ayuda, no dude en unirse a la [comunidad de Discord](https://discord
 
 **ملاحظة: نسمح لك فقط بتعديل الملفات التالية. سيتم رفض أي تغييرات يتم إجراؤها على الملفات بخلاف الملفات التالية:**
 
--   `src/main/java/com/bytelegend/`
+-   `src/main/java/com/bytelegend/Cat.java`
+-   `src/main/java/com/bytelegend/Dog.java`
+-   `src/main/java/com/bytelegend/Sheep.java`
+-   `src/main/java/com/bytelegend/Animal.java`
 </details>
 
 <details>
 <summary>Português</summary>
 
-Extrair código comum para classe base
--------------------------------------
+Extraia o código comum para a classe base
+-----------------------------------------
 
-Há muito código duplicado nas classes `Cat` , `Dog` e `Sheep` , refatore-os para uma classe base. para que a execução local do `mvn verify` possa passar.
+Há muitos códigos duplicados nas classes `Cat` , `Dog` e `Sheep` , refatore-os, extraia o código comum para uma classe `Animal` base e certifique-se de que a execução local do `mvn verify` passe.
 
 Não sei como? Consulte [verificar localmente em IDEA](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/run-mvn-verify-idea.md) / [verificar localmente em VSCode](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/run-mvn-verify-vscode.md) .
 
--   Você pode realizar este desafio de qualquer maneira abaixo:
+-   Você pode realizar esse desafio de qualquer maneira abaixo:
     -   Recomendado para iniciantes: execute `git clone https://github.com/ByteLegendQuest/java-refactor-to-base-class` para baixar o código, conclua o desafio em seu IDE local e copie/cole/envie a resposta no editor da web .
         -   Se você não sabe como, você pode clicar em [importar projeto para IDEA](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/clone-and-import.md) / [importar projeto para VSCode](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/clone-and-import-vscode.md) .
         -   Antes de enviar seu código, é melhor você executar `mvn verify` localmente para economizar tempo. Não sei como? Consulte [verificar localmente em IDEA](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/run-mvn-verify-idea.md) / [verificar localmente em VSCode](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/run-mvn-verify-vscode.md) .
@@ -173,7 +188,10 @@ Se precisar de ajuda, sinta-se à vontade para se juntar à [Comunidade Discord]
 
 **Nota: só permitimos que você modifique os seguintes arquivos. Quaisquer alterações em arquivos que não sejam os arquivos a seguir serão rejeitadas:**
 
--   `src/main/java/com/bytelegend/`
+-   `src/main/java/com/bytelegend/Cat.java`
+-   `src/main/java/com/bytelegend/Dog.java`
+-   `src/main/java/com/bytelegend/Sheep.java`
+-   `src/main/java/com/bytelegend/Animal.java`
 </details>
 
 <details>
@@ -182,7 +200,7 @@ Se precisar de ajuda, sinta-se à vontade para se juntar à [Comunidade Discord]
 Ekstrak Kode Umum ke Kelas Dasar
 --------------------------------
 
-Ada banyak kode duplikat di kelas `Cat` , `Dog` dan `Sheep` , harap refactor mereka ke kelas dasar. sehingga menjalankan `mvn verify` lokal dapat lulus.
+Ada banyak kode duplikat di kelas `Cat` , `Dog` dan `Sheep` , harap refactor mereka, ekstrak kode umum ke kelas `Animal` dasar dan pastikan run lokal dari `mvn verify` lulus.
 
 Tidak tahu bagaimana? Lihat [verifikasi secara lokal di IDEA](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/run-mvn-verify-idea.md) / [verifikasi secara lokal di VSCode](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/run-mvn-verify-vscode.md) .
 
@@ -202,7 +220,10 @@ Jika Anda memerlukan bantuan, jangan ragu untuk bergabung dengan [Komunitas Disc
 
 **Catatan: kami hanya mengizinkan Anda untuk mengubah file berikut. Setiap perubahan pada file selain file berikut akan ditolak:**
 
--   `src/main/java/com/bytelegend/`
+-   `src/main/java/com/bytelegend/Cat.java`
+-   `src/main/java/com/bytelegend/Dog.java`
+-   `src/main/java/com/bytelegend/Sheep.java`
+-   `src/main/java/com/bytelegend/Animal.java`
 </details>
 
 <details>
@@ -211,7 +232,7 @@ Jika Anda memerlukan bantuan, jangan ragu untuk bergabung dengan [Komunitas Disc
 Extraire le code commun vers la classe de base
 ----------------------------------------------
 
-Il y a beaucoup de code en double dans les classes `Cat` , `Dog` et `Sheep` , veuillez les refactoriser dans une classe de base. afin que l'exécution locale de `mvn verify` puisse passer.
+Il y a beaucoup de code en double dans les classes `Cat` , `Dog` et `Sheep` , veuillez les refactoriser, extraire le code commun vers une classe `Animal` de base et assurez-vous que l'exécution locale de `mvn verify` passe.
 
 Vous ne savez pas comment ? Voir [vérifier localement dans IDEA](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/run-mvn-verify-idea.md) / [vérifier localement dans VSCode](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/run-mvn-verify-vscode.md) .
 
@@ -231,7 +252,10 @@ Si vous avez besoin d'aide, n'hésitez pas à rejoindre la [communauté Discord]
 
 **Remarque : nous vous autorisons uniquement à modifier les fichiers suivants. Toute modification de fichiers autres que les fichiers suivants sera rejetée :**
 
--   `src/main/java/com/bytelegend/`
+-   `src/main/java/com/bytelegend/Cat.java`
+-   `src/main/java/com/bytelegend/Dog.java`
+-   `src/main/java/com/bytelegend/Sheep.java`
+-   `src/main/java/com/bytelegend/Animal.java`
 </details>
 
 <details>
@@ -240,7 +264,7 @@ Si vous avez besoin d'aide, n'hésitez pas à rejoindre la [communauté Discord]
 共通コードを基本クラスに抽出する
 ----------------
 
-`Cat` 、 `Dog` 、 `Sheep`クラスには重複するコードがたくさんあります。それらを基本クラスにリファクタリングしてください。 `mvn verify`のローカル実行が合格できるようにします。
+`Cat` 、 `Dog` 、 `Sheep`クラスには重複するコードがたくさんあります。それらをリファクタリングし、共通のコードを基本の`Animal`クラスに抽出して、 `mvn verify`パスのローカル実行を確認してください。
 
 方法がわかりませんか？ [IDEAでローカルに](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/run-mvn-verify-idea.md)[検証する/VSCodeでローカルに](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/run-mvn-verify-vscode.md)検証するを参照してください。
 
@@ -260,7 +284,10 @@ Si vous avez besoin d'aide, n'hésitez pas à rejoindre la [communauté Discord]
 
 **注：変更できるのは次のファイルのみです。次のファイル以外のファイルへの変更は拒否されます。**
 
--   `src/main/java/com/bytelegend/`
+-   `src/main/java/com/bytelegend/Cat.java`
+-   `src/main/java/com/bytelegend/Dog.java`
+-   `src/main/java/com/bytelegend/Sheep.java`
+-   `src/main/java/com/bytelegend/Animal.java`
 </details>
 
 <details>
@@ -269,7 +296,7 @@ Si vous avez besoin d'aide, n'hésitez pas à rejoindre la [communauté Discord]
 Извлечь общий код в базовый класс
 ---------------------------------
 
-В классах `Cat` , `Dog` и `Sheep` много повторяющегося кода, пожалуйста, реорганизуйте их в базовый класс. так что локальный запуск `mvn verify` может пройти.
+В классах `Cat` , `Dog` и `Sheep` много повторяющегося кода, проведите их рефакторинг, извлеките общий код в базовый класс `Animal` и убедитесь, что локальный запуск `mvn verify` проходит.
 
 Не знаете как? См. « [Проверить локально в IDEA](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/run-mvn-verify-idea.md) / [проверить локально в VSCode»](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/run-mvn-verify-vscode.md) .
 
@@ -289,7 +316,10 @@ Si vous avez besoin d'aide, n'hésitez pas à rejoindre la [communauté Discord]
 
 **Примечание: мы разрешаем вам изменять только следующие файлы. Любые изменения в файлах, кроме следующих файлов, будут отклонены:**
 
--   `src/main/java/com/bytelegend/`
+-   `src/main/java/com/bytelegend/Cat.java`
+-   `src/main/java/com/bytelegend/Dog.java`
+-   `src/main/java/com/bytelegend/Sheep.java`
+-   `src/main/java/com/bytelegend/Animal.java`
 </details>
 
 <details>
@@ -298,7 +328,7 @@ Si vous avez besoin d'aide, n'hésitez pas à rejoindre la [communauté Discord]
 Extrahieren Sie allgemeinen Code in die Basisklasse
 ---------------------------------------------------
 
-Es gibt eine Menge doppelten Code in den Klassen `Cat` , `Dog` und `Sheep` , bitte refaktorisieren Sie sie in eine Basisklasse. damit der lokale Lauf von `mvn verify` passieren kann.
+Es gibt eine Menge doppelten Code in den Klassen `Cat` , `Dog` und `Sheep` , bitte refaktorisieren Sie sie, extrahieren Sie gemeinsamen Code in eine Basisklasse `Animal` und stellen Sie sicher, dass die lokale Ausführung von `mvn verify` pass.
 
 Sie wissen nicht wie? Siehe [Lokal verifizieren in IDEA](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/run-mvn-verify-idea.md) / [Lokal verifizieren in VSCode](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/run-mvn-verify-vscode.md) .
 
@@ -318,7 +348,10 @@ Wenn Sie Hilfe benötigen, können Sie sich gerne der [Discord Community](https:
 
 **Hinweis: Wir erlauben Ihnen nur, die folgenden Dateien zu ändern. Alle Änderungen an anderen Dateien als den folgenden Dateien werden abgelehnt:**
 
--   `src/main/java/com/bytelegend/`
+-   `src/main/java/com/bytelegend/Cat.java`
+-   `src/main/java/com/bytelegend/Dog.java`
+-   `src/main/java/com/bytelegend/Sheep.java`
+-   `src/main/java/com/bytelegend/Animal.java`
 </details>
 
 <details>
@@ -327,16 +360,16 @@ Wenn Sie Hilfe benötigen, können Sie sich gerne der [Discord Community](https:
 공통 코드를 기본 클래스로 추출
 -----------------
 
-`Cat` , `Dog` 및 `Sheep` 클래스에는 중복 코드가 많이 있습니다. 기본 클래스로 리팩토링하십시오. `mvn verify` 의 로컬 실행이 통과할 수 있도록 합니다.
+`Cat` , `Dog` 및 `Sheep` 클래스에는 중복 코드가 많이 있습니다. 이를 리팩터링하고 공통 코드를 기본 `Animal` 클래스로 추출하고 `mvn verify` 통과의 로컬 실행을 확인하십시오.
 
 방법을 모르십니까? [IDEA에서 로컬로](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/run-mvn-verify-idea.md) [확인/VSCode에서 로컬로](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/run-mvn-verify-vscode.md) 확인을 참조하세요.
 
--   아래 방법을 통해 이 챌린지를 완료할 수 있습니다.
-    -   초보자에게 권장: `git clone https://github.com/ByteLegendQuest/java-refactor-to-base-class` 를 실행하여 코드를 다운로드하고 로컬 IDE에서 챌린지를 완료한 다음 웹 편집기에서 답변을 복사/붙여넣기/제출합니다. .
-        -   방법을 모르는 경우 [프로젝트를 IDEA로](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/clone-and-import.md) [가져오기 / 프로젝트를 VSCode로 가져](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/clone-and-import-vscode.md) 오기를 클릭할 수 있습니다.
+-   아래 방법을 통해 이 도전 과제를 수행할 수 있습니다.
+    -   초보자를 위한 권장 사항: `git clone https://github.com/ByteLegendQuest/java-refactor-to-base-class` 를 실행하여 코드를 다운로드하고 로컬 IDE에서 챌린지를 완료한 다음 웹 편집기에서 답변을 복사/붙여넣기/제출합니다. .
+        -   방법을 모른다면 [프로젝트를 IDEA로](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/clone-and-import.md) [가져오기 / 프로젝트를 VSCode로 가져](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/clone-and-import-vscode.md) 오기를 클릭할 수 있습니다.
         -   코드를 제출하기 전에 시간을 절약하기 위해 로컬에서 `mvn verify` 를 실행하는 것이 좋습니다. 방법을 모르십니까? [IDEA에서 로컬로](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/run-mvn-verify-idea.md) [확인/VSCode에서 로컬로](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/run-mvn-verify-vscode.md) 확인을 참조하세요.
     -   매우 권장하지 않음: `git` 작업이 마음에 들지 않으면 [여기를 클릭하여 압축 코드를 다운로드](https://codeload.github.com/ByteLegendQuest/java-refactor-to-base-class/zip/refs/heads/main) 할 수 있습니다.
-    -   또는 웹 편집기에서 직접 코드를 작성할 만큼 자신이 있다면 계속 진행하십시오.
+    -   또는 웹 편집기에서 직접 코드를 작성할 만큼 자신이 있다면 계속하십시오.
     -   또는 GitHub에 익숙하다면 리포지토리를 분기 [하고](https://github.com/ByteLegendQuest/java-refactor-to-base-class) 챌린지를 완료하고 풀 요청을 생성할 수 있습니다.
 -   봇은 PR을 확인하고 도전 과제를 달성했는지 알려줍니다.
 -   [ByteLegend](https://bytelegend.com) 로 돌아가 영웅 여정을 계속하세요.
@@ -345,9 +378,12 @@ Wenn Sie Hilfe benötigen, können Sie sich gerne der [Discord Community](https:
 
 도움이 필요하면 언제든지 [Discord 커뮤니티](https://discord.gg/35RreUUGWt) 에 가입하거나 [contact@bytelegend.com](mailto:contact@bytelegend.com) 을 통해 문의하세요.
 
-**참고: 다음 파일만 수정할 수 있습니다. 다음 파일 이외의 파일에 대한 변경 사항은 거부됩니다.**
+**참고: 다음 파일만 수정할 수 있습니다. 다음 파일 이외의 파일에 대한 모든 변경 사항은 거부됩니다.**
 
--   `src/main/java/com/bytelegend/`
+-   `src/main/java/com/bytelegend/Cat.java`
+-   `src/main/java/com/bytelegend/Dog.java`
+-   `src/main/java/com/bytelegend/Sheep.java`
+-   `src/main/java/com/bytelegend/Animal.java`
 </details>
 
 <details>
@@ -356,7 +392,7 @@ Wenn Sie Hilfe benötigen, können Sie sich gerne der [Discord Community](https:
 Estrai il codice comune nella classe base
 -----------------------------------------
 
-Ci sono molti codici duplicati nelle classi `Cat` , `Dog` e `Sheep` , per favore rifattorizzarli in una classe base. in modo che l'esecuzione locale di `mvn verify` possa passare.
+Ci sono molti codici duplicati nelle classi `Cat` , `Dog` e `Sheep` , esegui il refactoring, estrai il codice comune in una classe `Animal` di base e assicurati che l'esecuzione locale di `mvn verify` passaggio.
 
 Non sai come? Vedere [verifica in locale in IDEA](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/run-mvn-verify-idea.md) / [verifica in locale in VSCode](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/en/run-mvn-verify-vscode.md) .
 
@@ -376,5 +412,8 @@ Se hai bisogno di aiuto, non esitare a unirti alla [community di Discord](https:
 
 **Nota: ti permettiamo solo di modificare i seguenti file. Eventuali modifiche ai file diversi dai seguenti file verranno rifiutate:**
 
--   `src/main/java/com/bytelegend/`
+-   `src/main/java/com/bytelegend/Cat.java`
+-   `src/main/java/com/bytelegend/Dog.java`
+-   `src/main/java/com/bytelegend/Sheep.java`
+-   `src/main/java/com/bytelegend/Animal.java`
 </details>
