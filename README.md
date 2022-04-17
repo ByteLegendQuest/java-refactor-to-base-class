@@ -41,7 +41,7 @@ Any changes to files other than the following files will be rejected:**
 
 `Cat`/`Dog`/`Sheep`类中存在大量重复代码，请重构之，将重复代码提取到`Animal`类中，并确保本地运行`mvn verify`能够通过。
 
-不知道如何做？请查看[在IDEA中本地验证](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/zh_hans/run-mvn-verify-idea.md)/[在VSCode中本地验证](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/zh_hans/run-mvn-verify-vscode.md
+不知道如何做？请查看[在IDEA中本地验证](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/zh_hans/run-mvn-verify-idea.md)/[在VSCode中本地验证](https://github.com/ByteLegendQuest/java-refactor-to-base-class/blob/main/docs/zh_hans/run-mvn-verify-vscode.md)。
 
 - 你可以使用以下任意一种方法完成挑战：
   - 初学者推荐：运行`git clone https://git.bytelegend.com/ByteLegendQuest/java-refactor-to-base-class`将代码下载到本地，在本地使用IDE调试完成后复制到网页编辑器里提交。
