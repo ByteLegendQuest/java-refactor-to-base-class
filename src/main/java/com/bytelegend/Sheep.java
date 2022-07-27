@@ -1,10 +1,14 @@
 package com.bytelegend;
 
-public class Sheep extends Animal{
-
+public class Sheep {
+    private final String name;
 
     public Sheep(String name) {
-        super(name);
+        this.name = name;
+    }
+
+    public void sayMyName() {
+        System.out.println("my name is: " + name);
     }
 
     public void meh() {
@@ -12,4 +16,3 @@ public class Sheep extends Animal{
         sayMyName();
     }
 }
-
