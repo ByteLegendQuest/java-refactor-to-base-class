@@ -1,13 +1,15 @@
 package com.bytelegend;
 
-public abstract class Animal {
+public class Animal {
     protected final String name;
 
     public Animal(String name) {
         this.name = name;
     }
 
-    public abstract void sayMyName();
+    public void sayMyName(
+        System.out.println("my name is: " + super.name);
+    );
 
     public void meow() {
         System.out.print("meow, ");
