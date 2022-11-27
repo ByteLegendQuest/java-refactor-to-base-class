@@ -7,9 +7,7 @@ public class Dog extends Animal {
         super(name);
     }
 
-    public void sayMyName() {
-        System.out.println("my name is: " + name);
-    }
+  
 
     public void woof() {
         System.out.print("woof, ");
