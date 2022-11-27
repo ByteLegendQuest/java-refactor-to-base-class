@@ -8,7 +8,7 @@ public class Animal {
     }
 
     public void sayMyName(
-        System.out.println("my name is: " + super.name);
+        System.out.println("my name is: " + name);
     );
 
     public void meow() {
