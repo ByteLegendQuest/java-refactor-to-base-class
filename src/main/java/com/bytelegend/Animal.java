@@ -1,7 +1,7 @@
 package com.bytelegend;
 
 public class Animal {
-    protected final String name;
+    protected  String name;
 
     public Animal(String name) {
         this.name = name;
