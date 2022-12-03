@@ -1,15 +1,18 @@
 package com.bytelegend;
 
 public class Animal {
-    protected  String name;
+    protected String name;
 
     public Animal(String name) {
         this.name = name;
     }
 
-    public void sayMyName(
+    public void sayMyName() {
         System.out.println("my name is: " + name);
-    )
+    }
 
-    
+    public void meow() {
+        System.out.print("meow, ");
+        sayMyName();
+    }
 }
