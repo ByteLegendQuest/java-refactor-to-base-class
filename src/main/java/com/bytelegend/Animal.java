@@ -11,8 +11,5 @@ public class Animal {
         System.out.println("my name is: " + name);
     );
 
-    public void meow() {
-        System.out.print("meow, ");
-        sayMyName();
-    }
+    
 }
