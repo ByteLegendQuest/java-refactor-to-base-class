@@ -9,7 +9,7 @@ public class Animal {
 
     public void sayMyName(
         System.out.println("my name is: " + name);
-    );
+    )
 
     
 }
