@@ -4,11 +4,7 @@ public class Cat {
     private final String name;
 
     public Cat(String name) {
-        this.name = name;
-    }
-
-    public void sayMyName() {
-        System.out.println("my name is: " + name);
+        super(name);
     }
 
     public void meow() {
