@@ -1,6 +1,6 @@
 package com.bytelegend;
 
-public class Dog {
+public class Dog extends Animal {
     private final String name;
 
     public Dog(String name) {
